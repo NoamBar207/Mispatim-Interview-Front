@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import { Routes, Route } from "react-router";
 import { AppHeader } from "./cmps/AppHeader";
 import { AppFooter } from "./cmps/AppFooter";

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { postsService } from "../../services/post.service";
 import { PostPrev } from "./PostPrev";
 import { PaginationCmp } from "../utilcmps/PaginationCmp";
+import { SectionTitle } from "../utilcmps/SectionTitle";
 
 export function PostsList({ setSelectedPost }) {
   const [postsState, setPostsState] = useState([]);
@@ -19,6 +20,7 @@ export function PostsList({ setSelectedPost }) {
 
   return (
     <section className="posts-list-container">
+      <SectionTitle title="Posts:" />
       <div className="list-container">
         {postsToRender?.map((post) => {
           return <PostPrev post={post} setSelectedPost={setSelectedPost} />;

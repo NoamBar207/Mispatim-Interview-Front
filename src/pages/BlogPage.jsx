@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { postsService } from "../services/post.service";
+import { useState } from "react";
 import { PostsList } from "../cmps/blogcmps/PostsList";
 import { CommentsList } from "../cmps/blogcmps/CommentsList";
 

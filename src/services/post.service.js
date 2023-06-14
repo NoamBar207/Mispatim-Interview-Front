@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const STORAGE_KEY_USERS = "user";
-
 export const postsService = {
   getPosts,
   getComments,

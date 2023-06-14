@@ -1,8 +1,4 @@
 import axios from "axios";
-import { httpService } from "./http.service";
-import { utilService } from "./util.service";
-
-const STORAGE_KEY_TODOS = "todo";
 
 export const todosService = {
   getTodos,

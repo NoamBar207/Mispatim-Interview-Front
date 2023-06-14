@@ -20,6 +20,17 @@
   padding: 12px;
 }
 
+@mixin section-title {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  h1 {
+    color: $clr-secondary-txt;
+    text-decoration: underline;
+  }
+}
+
 @mixin scroll-bars {
   cursor: pointer;
   &::-webkit-scrollbar {

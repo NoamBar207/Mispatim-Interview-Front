@@ -1,8 +1,6 @@
 import { useState } from "react";
-import JsonEditor from "react-json-editor-ui";
 import { useDispatch } from "react-redux";
-import { onUpdateUser, setUser } from "../../store/actions/user.action";
-import { isEditable } from "@testing-library/user-event/dist/utils";
+import { onUpdateUser } from "../../store/actions/user.action";
 
 export function UserModal({ user, onReadMore }) {
   const [userState, setUserState] = useState(JSON.parse(JSON.stringify(user)));

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getTodos } from "../../store/actions/todos.action";
 import { TodoPrev } from "./TodoPrev";
 import { PaginationCmp } from "../utilcmps/PaginationCmp";
+import { SectionTitle } from "../utilcmps/SectionTitle";
 
 export function TodosList() {
   const dispatch = useDispatch();
@@ -21,9 +22,7 @@ export function TodosList() {
 
   return (
     <section className="todos-list-container">
-      <div className="todos-list-title">
-        <h1>Todos:</h1>
-      </div>
+      <SectionTitle title="Todos:" />
       <div className="list-container">
         {todosToRender.map((todo) => {
           return <TodoPrev todo={todo} key={todo.id} />;

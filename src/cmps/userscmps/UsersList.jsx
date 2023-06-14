@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { userService } from "../../services/user.service";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers, setUser } from "../../store/actions/user.action";
 import { UserCard } from "./UserCard";
+import { SectionTitle } from "../utilcmps/SectionTitle";
 
 export function UsersList({ onReadMore }) {
   const dispatch = useDispatch();
@@ -23,9 +23,7 @@ export function UsersList({ onReadMore }) {
 
   return (
     <section className="users-list-container">
-      <div className="users-list-title">
-        <h1>Users:</h1>
-      </div>
+      <SectionTitle title="Users:" />
       <div className="list-container">
         {users.map((user) => {
           return (
