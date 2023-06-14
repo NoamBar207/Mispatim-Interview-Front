@@ -1,0 +1,22 @@
+.app-header-container {
+  @include flex-center;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: $clr-secondary-txt;
+  background-color: $clr-card-bg;
+  height: 45px;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+
+  .nav {
+    display: flex;
+    gap: 24px;
+
+    a {
+      color: $clr-secondary-txt;
+      text-decoration: none;
+    }
+  }
+}

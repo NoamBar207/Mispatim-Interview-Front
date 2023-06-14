@@ -1,0 +1,65 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin card {
+  @include flex-center-column;
+  gap: 12px;
+  border: 1px solid $clr-main-txt;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+@mixin scroll-bars {
+  cursor: pointer;
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $clr-scroll-bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $clr-secondary-txt;
+
+    &:hover {
+      background: #555;
+    }
+  }
+}
+
+@mixin for-laptop-layout {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-narrow-layout {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-layout {
+  @media (max-width: 780px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-layout {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

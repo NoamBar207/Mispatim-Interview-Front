@@ -1,0 +1,17 @@
+.homepage-container {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  overflow-y: auto;
+  flex: 1;
+  color: $clr-main-txt;
+  margin: 50px 0;
+
+  .homepage-greet {
+    font-size: 1.4rem;
+    h2 {
+      color: $clr-main-txt;
+    }
+  }
+}

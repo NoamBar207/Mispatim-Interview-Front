@@ -1,0 +1,15 @@
+.users-list-container {
+  @include flex-center-column;
+  align-items: flex-start;
+  gap: 24px;
+
+  h1 {
+    color: $clr-main-txt;
+  }
+
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
