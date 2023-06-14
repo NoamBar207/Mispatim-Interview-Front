@@ -1,0 +1,13 @@
+.comments-list-container {
+  height: 100%;
+  @include flex-center-column;
+  gap: 24px;
+
+  .list-container {
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    flex: 1;
+  }
+}

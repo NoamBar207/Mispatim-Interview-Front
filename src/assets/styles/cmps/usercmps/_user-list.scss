@@ -3,6 +3,13 @@
   align-items: flex-start;
   gap: 24px;
 
+  .users-list-title {
+    h1 {
+      color: $clr-secondary-txt;
+      text-decoration: underline;
+    }
+  }
+
   h1 {
     color: $clr-main-txt;
   }

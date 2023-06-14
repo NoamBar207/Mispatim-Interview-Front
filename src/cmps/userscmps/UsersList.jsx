@@ -23,13 +23,20 @@ export function UsersList({ onReadMore }) {
 
   return (
     <section className="users-list-container">
-      <h1>Users:</h1>
+      <div className="users-list-title">
+        <h1>Users:</h1>
+      </div>
       <div className="list-container">
         {users.map((user) => {
           return (
             <UserCard user={user} onCard={onCard} onReadMore={onReadMore} />
           );
         })}
+        {!!Object.keys(currUser).length && (
+          <div className="user-card-container" onClick={() => onCard({})}>
+            Show All
+          </div>
+        )}
       </div>
     </section>
   );

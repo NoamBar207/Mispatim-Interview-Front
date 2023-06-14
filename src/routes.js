@@ -1,3 +1,4 @@
+import { BlogPage } from "./pages/BlogPage";
 import { UserPage } from "./pages/UserPage";
 
 const routes = [
@@ -8,8 +9,8 @@ const routes = [
   },
   {
     path: "/blog",
-    component: <UserPage />,
-    label: "Home Page",
+    component: <BlogPage />,
+    label: "Blog Page",
   },
 
   // {

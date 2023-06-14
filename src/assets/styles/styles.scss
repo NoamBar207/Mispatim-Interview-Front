@@ -15,7 +15,12 @@
 @import "./cmps/usercmps/todos-list";
 @import "./cmps/usercmps/user-modal";
 
+@import "./cmps/blogcmps/comments-list";
+@import "./cmps/blogcmps/post-list";
+@import "./cmps/blogcmps/post-prev";
+
 @import "./cmps/utilcmps/pagination-cmp";
 
 ///Pages
 @import "./pages/homepage";
+@import "./pages/blog-page";

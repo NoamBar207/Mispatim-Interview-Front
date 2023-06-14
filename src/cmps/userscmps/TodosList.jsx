@@ -21,6 +21,9 @@ export function TodosList() {
 
   return (
     <section className="todos-list-container">
+      <div className="todos-list-title">
+        <h1>Todos:</h1>
+      </div>
       <div className="list-container">
         {todosToRender.map((todo) => {
           return <TodoPrev todo={todo} key={todo.id} />;

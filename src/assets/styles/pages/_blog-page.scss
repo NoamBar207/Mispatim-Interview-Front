@@ -1,0 +1,9 @@
+.blog-page-container {
+  padding: 65px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  color: $clr-main-txt;
+  box-sizing: border-box;
+}

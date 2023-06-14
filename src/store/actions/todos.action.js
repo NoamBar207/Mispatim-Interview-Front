@@ -4,7 +4,6 @@ export function getTodos(userId = null) {
   return async (dispatch) => {
     try {
       let todosData = await todosService.getTodos();
-      console.log(todosData);
       todosData = userId
         ? todosData.filter((todo) => todo.userId === userId)
         : todosData;
